@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Checkmarx') {
             steps {
-                checkmarxASTScanner additionalOptions: '', baseAuthUrl: '', branchName: '', checkmarxInstallation: 'Checkmarx_CLI', credentialsId: '', projectName: 'VAmPI2', serverUrl: '', tenantName: '', useOwnAdditionalOptions: false
+                checkmarxASTScanner additionalOptions: '--project-groups internship', baseAuthUrl: '', branchName: '', checkmarxInstallation: 'Checkmarx_CLI', credentialsId: '', projectName: 'VAmPI', serverUrl: '', tenantName: '', useOwnAdditionalOptions: true
             }
         }
     }
